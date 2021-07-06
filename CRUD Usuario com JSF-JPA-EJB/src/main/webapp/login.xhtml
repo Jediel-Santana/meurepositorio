@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+
+
+<ui:composition template="_template.xhtml">
+
+	<ui:define name="head">
+		<h:outputStylesheet library="css" name="login-style.css" />
+	</ui:define>
+
+
+
+
+	<ui:define name="conteudo">
+
+
+		<div class="box-login">
+
+
+
+			<div class="login">
+				<p:outputPanel styleClass="titulo-login">Login</p:outputPanel>
+
+				<h:form id="form-login" styleClass="formulario-login">
+					<p:growl id="messages" showDetail="true">
+						<p:autoUpdate />
+					</p:growl>
+					
+					
+					<div class="messages-login">
+						<p:messages id="messages-error" styleClass="mensagem-erro-login" /> 
+						
+					</div>
+					
+					<h:panelGrid columns="2">
+				
+
+						<p:outputLabel styleClass="label-form-login" for="email">Email</p:outputLabel>
+						<p:inputText value="#{usuarioBean.usuario.email}" styleClass="input-login" required="true" requiredMessage="Email requerido" id="email" validatorMessage="Formato do email inválido: seunome@dominio.com">
+						<f:attribute name="type" value="email" />
+						<f:validateRegex pattern=".+@.+" for="email" />
+						
+						
+						</p:inputText>
+
+						<p:outputLabel styleClass="label-form-login" for="senha">Senha</p:outputLabel>
+						<p:password value="#{usuarioBean.usuario.senha}" required="true" styleClass="input-login" id="senha"  requiredMessage="Senha requerida">
+														
+						</p:password>
+							
+						
+					</h:panelGrid>
+					
+					<div class="box-botao">
+						<p:commandButton process="@form" update="@form"  action="#{usuarioBean.logar()}" value="Entrar" styleClass="botao-logar" />
+								
+					</div>
+						
+					<p:commandLink styleClass="botao-cadastrar"  value="Cadastrar-se"  action="novoUsuario?faces-redirect=true" update="@all" process="@this" immediate="true"/>	
+			
+				</h:form>
+					
+					
+				<div>
+				
+					
+				
+				</div>
+				
+				
+			</div>
+
+		</div>
+
+
+	</ui:define>
+
+
+
+
+
+</ui:composition>
+
+
+</html>

@@ -1,0 +1,130 @@
+2021-06-30 10:55:30,470 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+2021-06-30 10:55:31,158 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+2021-06-30 10:55:31,169 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2021-06-30 10:55:31,286 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 23.0.2.Final (WildFly Core 15.0.1.Final) starting
+2021-06-30 10:55:31,288 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_291\jre
+	java.io.tmpdir = C:\Users\Jediel\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_291\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Users/Jediel/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/Jediel/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\Jediel\apache-maven-3.8.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jediel\AppData\Local\Microsoft\WindowsApps;%MAVEN_HOME%\bin;;C:\Users\Jediel\Desktop;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_291-b10
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_291
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.291-b10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final
+	jboss.host.name = desktop-tnvcm26
+	jboss.modules.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = desktop-tnvcm26
+	jboss.qualified.host.name = desktop-tnvcm26
+	jboss.server.base.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone
+	jboss.server.config.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\log
+	jboss.server.name = desktop-tnvcm26
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\modules
+	org.jboss.boot.log.file = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 23
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_291\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone-full.xml -Djboss.server.base.dir=C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\bin
+	user.home = C:\Users\Jediel
+	user.language = pt
+	user.name = Jediel
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2021-06-30 10:55:31,290 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 23 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2021-06-30 10:55:32,192 INFO  [org.wildfly.security] (ServerService Thread Pool -- 22) ELY00001: WildFly Elytron version 1.15.3.Final
+2021-06-30 10:55:32,652 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2021-06-30 10:55:32,936 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-06-30 10:55:32,978 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-06-30 10:55:33,075 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-06-30 10:55:33,092 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.4.Final
+2021-06-30 10:55:33,101 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.4.Final
+2021-06-30 10:55:33,164 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 57) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-06-30 10:55:33,192 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 59) WFLYRS0016: RESTEasy version 3.15.1.Final
+2021-06-30 10:55:33,193 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.4.27.Final)
+2021-06-30 10:55:33,200 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 64) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2021-06-30 10:55:33,210 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 69) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2021-06-30 10:55:33,216 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 68) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-06-30 10:55:33,219 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 70) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2021-06-30 10:55:33,223 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 71) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2021-06-30 10:55:33,225 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 72) WFLYNAM0001: Activating Naming Subsystem
+2021-06-30 10:55:33,229 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 80) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-06-30 10:55:33,237 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-06-30 10:55:33,245 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 78) WFLYSEC0002: Activating Security Subsystem
+2021-06-30 10:55:33,250 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 82) WFLYWS0002: Activating WebServices Extension
+2021-06-30 10:55:33,253 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 56) WFLYIIOP0001: Activating IIOP Subsystem
+2021-06-30 10:55:33,265 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-06-30 10:55:33,305 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2021-06-30 10:55:33,306 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-06-30 10:55:33,306 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.5.Final starting
+2021-06-30 10:55:33,332 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 47) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-06-30 10:55:33,353 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 58) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2021-06-30 10:55:33,367 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-06-30 10:55:33,448 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2021-06-30 10:55:33,454 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2021-06-30 10:55:33,465 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.20.Final
+2021-06-30 10:55:33,709 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0014: Creating file handler for path 'C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-06-30 10:55:33,766 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration\application.keystore' does not exist. Used blank.
+2021-06-30 10:55:33,801 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2021-06-30 10:55:33,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+2021-06-30 10:55:33,819 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2021-06-30 10:55:33,820 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-06-30 10:55:34,003 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-06-30 10:55:34,026 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2021-06-30 10:55:34,037 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2021-06-30 10:55:34,048 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore C:\Users\Jediel\Documents\Estudos alura\desafio-sefaz\wildfly-23.0.2.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost

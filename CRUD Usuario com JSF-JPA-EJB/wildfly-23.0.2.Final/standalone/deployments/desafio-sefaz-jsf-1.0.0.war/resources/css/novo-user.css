@@ -1,0 +1,83 @@
+
+
+.titulo-principal{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.formularioNovoUsuario{
+	width: 60%;
+	font-weight: 600;
+}
+
+.box-titulo {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+	font-weight: bold;
+}
+
+.item-form-telefone {
+	margin-right: 1rem;
+	margin-left: .5rem;
+	
+}
+
+.panelTelefone{
+	margin-bottom: 1rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tiposTelefone{
+	margin-bottom: 1rem;
+}
+
+.formDadosUsuario{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+.conteudo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fieldDadosUsuario{
+	
+	margin-bottom: 1rem;
+}
+	
+.input-dados-user {
+	margin: .5rem !important;; 
+}
+
+.panelBotaoCadastrar{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.3rem;
+    width: 100%;
+}
+
+.botao-cadastrar {
+	width: 25%;
+	transition: all 0.5s;
+	margin-bottom: .6rem;
+}
+
+.botao-cadastrar:hover {
+	transform: scale(1.1);
+}
+
+.botao-voltar {
+	text-decoration: none;
+}
+
+

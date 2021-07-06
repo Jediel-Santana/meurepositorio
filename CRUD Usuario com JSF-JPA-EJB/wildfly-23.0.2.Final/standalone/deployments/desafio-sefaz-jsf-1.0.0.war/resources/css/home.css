@@ -1,0 +1,101 @@
+
+
+
+.conteudo {
+	display: grid;
+    grid-template-areas:
+        "todos-user"
+        "meu-perfil"; 
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+	padding: 1rem 0;
+}
+
+
+.tabelaTodosUsuarios {
+	grid-area: todos-user;
+	width: 100%;
+	grid-column: 1/1;
+	grid-row: 1/1;
+	padding: 0 1rem;
+}
+
+
+.perfil{
+	grid-area: meu-perfil;
+	grid-column: 2/2;
+    grid-row: 1/1;
+    width: 100%;
+	height: 50%;
+    margin: 0 2rem;
+    border-radius: 25px;
+    display: grid;
+    grid-template-areas:
+			"titulo"
+			"perfil"
+			"deslogar"
+	;
+
+	grid-template-rows: 65px calc(100% - 125px) 60px;
+	
+}
+
+.meu-perfil-cabecalho {
+	grid-area: titulo;
+}
+
+.meu-perfil-corpo {
+	grid-area: perfil;
+	margin: 0 1rem;
+	height: 100%;
+}
+
+.meu-perfil-botao {
+	grid-area: deslogar;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.tituloTodosUsuarios {
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.formTodosUsuarios{
+	width: 100%;
+}
+
+.panel-cadastrar-user{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.botao-cadastrar-user{
+	width: 30%;
+	padding: .6rem;
+	background: rgba(90, 129, 251, .8);
+	border: none;
+	transition: all 0.5s;
+	border-radius: 7px;
+}
+
+.botao-cadastrar-user:hover {
+	transform: scale(1.1);
+	background: rgba(90, 129, 251, .6);
+}
+
+.tabelaUsuarioLogado{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+

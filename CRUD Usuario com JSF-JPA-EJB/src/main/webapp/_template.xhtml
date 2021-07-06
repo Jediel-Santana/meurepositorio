@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<h:outputStylesheet library="css" name="index.css" />
+	<h:outputStylesheet library="css" name="reset.css" />
+	<h:link
+		href="https://fonts.googleapis.com/css2?family=Jomhuria&amp;display=swap"
+		rel="stylesheet" type="text/css" />
+
+
+	<div>
+		<ui:insert name="head"></ui:insert>
+
+	</div>
+
+
+
+</h:head>
+
+
+<h:body id="app" styleClass="app">
+
+
+
+
+
+
+	<div class="cabecalho centralizado">
+
+
+		<div class="cabecalho-titulo">
+			<p:outputPanel styleClass="titulo">Desafio Sefaz</p:outputPanel>
+		</div>
+
+	</div>
+
+
+
+	<div id="conteudo" class="conteudo centralizado">
+		<ui:insert name="conteudo">
+
+			
+
+
+
+		</ui:insert>
+	</div>
+
+
+
+
+	<h:panelGroup id="footer" styleClass="rodape">
+
+		<p:outputPanel styleClass="titulo-rodape">&copy; Todos os direitos reservados </p:outputPanel>
+
+
+
+	</h:panelGroup>
+
+
+
+</h:body>
+
+
+
+</html>

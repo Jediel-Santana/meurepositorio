@@ -1,0 +1,87 @@
+
+
+
+.box-login{
+    width: 50%;
+    height: 100%;
+    /* background: white; */
+    border-radius: 50px;
+    margin: auto;
+}
+
+.conteudo{
+    
+    /* padding: 10rem 5rem; */
+    
+	color: white;
+}
+
+.login{
+	display: grid;
+    margin: 0 7rem;
+    height: 100%;
+
+    grid-template-areas: 
+            "titulo-login"
+            "form-login";
+
+    grid-template-columns: auto;
+    grid-template-rows: 30% 70%;
+
+   }
+   
+   .semBorda tbody tr, .semBorda tbody tr td{
+   	border: none;
+   
+   }
+
+.label-form-login {
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.box-botao{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+
+.botao-logar{
+	width: 50%;
+    
+}
+
+.formulario-login input{
+	margin-bottom: 1rem; 
+	
+}
+
+.titulo-login{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.messages-login{
+	min-height: 60px;
+	width: 100%;
+}
+
+.mensagem-erro-login {
+	width: 100%;
+	height: 100%;
+	
+}

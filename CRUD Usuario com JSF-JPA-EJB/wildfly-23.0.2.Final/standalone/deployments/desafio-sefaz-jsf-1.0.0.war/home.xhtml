@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+
+
+<ui:composition template="_template.xhtml">
+
+	<ui:define name="head">
+		
+		<h:outputStylesheet library="css" name="home.css" />
+		
+	</ui:define>
+
+
+
+
+	<ui:define name="conteudo">
+	
+		
+		
+		<h:panelGroup id="tabelaTodosUsuarios" styleClass="tabelaTodosUsuarios">	
+			
+			<p:outputPanel styleClass="tituloTodosUsuarios">Todos Usuarios</p:outputPanel>
+			
+			<h:form styleClass="formTodosUsuarios" id="formularioTodosUsuarios">
+				
+				
+				<p:dataTable id="todosUsuariosTable" value="#{usuarioBean.usuarios}" var="usuario" emptyMessage="Nenhum usuário." paginator="true" rows="12" >
+					
+					<p:column style="width: 15%" sortBy="#{usuario.nome}" filterBy="#{usuario.nome}" filterMatchMode="startsWith">
+						<f:facet name="header">Nome</f:facet>
+						<h:outputText value="#{usuario.nome}" />				
+					</p:column>
+					
+					<p:column style="width: 25%" filterBy="#{usuario.email}" filterMatchMode="startsWith" >
+						<f:facet name="header">Email</f:facet>					
+						<h:outputText value="#{usuario.email}" />
+					</p:column>
+					
+					<p:column style="width: 15%">
+						<f:facet name="header" >Senha</f:facet>					
+						<h:outputText value="#{usuario.senha}" />
+					</p:column>
+					
+					<p:column style="width: 20%" >
+						<f:facet name="header">Telefones</f:facet>					
+						<h:outputText value="#{usuario.telefones}"   />
+					</p:column>
+					
+					<p:column style="width: 13%" >
+						<f:facet name="header">Atualizar</f:facet>
+						<p:commandButton immediate="true" value="alterar" action="#{usuarioBean.atualizarUsuario(usuario)}" icon="fa fa-fw fa-edit">
+							<f:setPropertyActionListener target="#{usuarioBean.usuario.id}" value="#{usuario.id}" ></f:setPropertyActionListener>
+						</p:commandButton>
+					</p:column>
+					
+					<p:column style="width: 13%" >
+						<f:facet name="header" >Remover</f:facet>
+						<p:commandButton process="@this" update="@form" value="Remover" actionListener="#{usuarioBean.remover(usuario)}"  icon="fa fa-fw fa-remove" />
+					</p:column>
+				
+				</p:dataTable>
+				
+				<h:panelGroup styleClass="panel-cadastrar-user">
+					<h:commandButton styleClass="botao-cadastrar-user" action="novoUsuario?faces-redirect=true" immediate="true" value="Cadastrar Usuário" />
+				</h:panelGroup>
+			</h:form>
+		</h:panelGroup>
+	
+		
+		<div class="perfil">
+			
+			<h:panelGroup styleClass="meu-perfil-cabecalho">
+				
+				<p:outputPanel styleClass="tituloTodosUsuarios" style=" font-size: 27px;" >Usuário Logado</p:outputPanel>
+			
+			</h:panelGroup>
+			
+			<h:panelGroup styleClass="meu-perfil-corpo">
+				
+				<p:panelGrid columns="2" styleClass="tabelaUsuarioLogado"> 
+					
+						<p:outputLabel>Nome:</p:outputLabel>
+						<p:outputLabel value="#{sessionScope.usuarioLogado.nome}" /> 
+						
+						<p:outputLabel>Email:</p:outputLabel>
+						<p:outputLabel value="#{sessionScope.usuarioLogado.email}" />
+						
+						<p:outputLabel>Senha:</p:outputLabel>
+						<p:outputLabel value="#{sessionScope.usuarioLogado.senha}" />
+						
+						<p:outputLabel>Telefones:</p:outputLabel>
+						<p:outputLabel value="#{sessionScope.usuarioLogado.telefones}" />
+					
+				
+				</p:panelGrid>
+				
+				
+			
+			</h:panelGroup>
+			
+			<h:panelGroup styleClass="meu-perfil-botao">
+				<p:commandButton action="#{usuarioBean.deslogar}" process="@this" update="@all" value="deslogar"  />
+			</h:panelGroup>
+			
+			
+			<h:panelGroup>
+				<h:outputLabel for="basic" style="text-align: center; font-size: 20px; font-weight:bold; color: white;">Temas</h:outputLabel> 
+				<h:form style="text-align:center; padding: 1rem;">
+					<p:themeSwitcher id="basic" style="width:165px"
+						value="#{temaBean.tema}">
+						<f:selectItems value="#{temaBean.temas}" var="tema"
+							itemLabel="#{tema}" itemValue="#{tema}" />
+						<f:ajax />
+					</p:themeSwitcher>
+				</h:form>
+			</h:panelGroup>
+		</div>
+	
+		
+		
+		
+
+	</ui:define>
+
+
+
+
+
+</ui:composition>
+
+
+</html>

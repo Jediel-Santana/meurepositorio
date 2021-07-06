@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+
+
+<ui:composition template="_template.xhtml">
+
+	<ui:define name="head">
+		<h:outputStylesheet library="css" name="novo-user.css" />
+	</ui:define>
+
+
+
+
+	<ui:define name="conteudo">
+
+		<div class="box-titulo">
+			<p:outputLabel styleClass="titulo-principal">Atualizar Usuário</p:outputLabel>
+		</div>
+		
+		<f:metadata>
+			<f:viewParam value="#{usuarioBean.idDoUsuarioParaAtualizar}" name="usuarioId" />
+			<f:viewAction action="#{usuarioBean.carregaUsuarioPelaId}" if="#{param.usuarioId != null}"/>
+		</f:metadata>
+		
+
+		<h:form styleClass="formularioNovoUsuario">
+			<p:growl id="messages" showDetail="true">
+				<p:autoUpdate />
+			</p:growl>
+			
+			<p:messages id="messagesForm" />
+			
+			<p:fieldset legend="Dados do usuário" styleClass="fieldDadosUsuario">
+
+				<h:panelGrid columns="1" styleClass="formDadosUsuario">
+					<p:outputLabel value="Nome" for="nome" />
+					<p:inputText id="nome" value="#{usuarioBean.usuario.nome}" required="true" requiredMessage="Campo 'Nome' é requerido" styleClass="input-dados-user " />
+
+					<p:outputLabel value="Email" for="email" />
+					<p:inputText id="email" value="#{usuarioBean.usuario.email}" validatorMessage="Email inválido: nome@seudominio.com" required="true" 
+										requiredMessage="Campo 'Email' é requerido" styleClass="input-dados-user ">
+						<f:attribute name="type" value="email" />
+						<f:validateRegex pattern=".+@.+" for="email" />
+					</p:inputText>
+
+					<p:outputLabel value="Senha" for="senha" styleClass="label-dados-user"  />
+					<p:inputText id="senha" value="#{usuarioBean.usuario.senha}" required="true" requiredMessage="Campo 'Senha' é requerido" styleClass="input-dados-user ">
+
+					</p:inputText>
+						
+					<p:outputLabel value="Confirmar Senha" for="confirmarSenha" styleClass="label-dados-user" />
+					<p:inputText id="confirmarSenha"
+						value="#{usuarioBean.confirmarSenha}" required="true" requiredMessage="Campo 'Confirmar Senha' é requerido" styleClass="input-dados-user "/>
+				</h:panelGrid>
+			</p:fieldset>
+
+			<p:fieldset legend="Contato" styleClass="fieldContato">
+
+				<h:panelGrid columns="5" styleClass="panelTelefone">
+					<p:outputLabel styleClass="item-form-telefone" for="telefone"
+						value="Telefone" />
+					<p:inputMask styleClass="item-form-telefone" id="telefone"
+						value="#{usuarioBean.telefone}" mask="(99) 9999-9999" validateMask="true" />
+					<p:outputLabel styleClass="item-form-telefone" id="tipoLabel"
+						value="Tipo" for="tipo" />
+					<p:selectOneMenu styleClass="item-form-telefone tiposTelefone"
+						id="tipo" value="#{usuarioBean.tipo}">
+						<f:selectItems value="#{usuarioBean.tiposTelefone()}"
+							var="telefone" itemLabel="#{telefone}" itemValue="#{telefone}" />
+					</p:selectOneMenu>
+
+
+
+					<p:commandButton value="Adicionar telefone"
+						action="#{usuarioBean.adicionarTelefone}"
+						update="tabelaTodosTelefones telefone messagesForm" process="@this telefone tipo"  />
+				</h:panelGrid>
+
+
+				<p:dataTable id="tabelaTodosTelefones"
+					value="#{usuarioBean.telefones}" var="telefone"
+					emptyMessage="Nenhum telefone">
+
+					<p:column>
+						<h:outputText value="#{telefone.toString()}" />
+						<h:commandLink styleClass="ui-icon ui-icon-trash"
+							style="float:left;margin-right:10px"
+							action="#{usuarioBean.removeTelefone(telefone)}" value="remover"
+							>
+							 <f:ajax execute="@this telefone" render="tabelaTodosTelefones" /> 
+							 </h:commandLink>
+					</p:column>
+
+				</p:dataTable>
+
+			</p:fieldset>
+
+			<h:panelGroup class="panelBotaoCadastrar">
+				<p:commandButton action="#{usuarioBean.gravar}" process="@form"
+					update="@form messages messagesForm" styleClass="botao-cadastrar"
+					value="Atualizar" />
+				
+				<h:commandLink value="voltar" action="home?faces-redirect=true" immediate="true" styleClass="botao-voltar" />
+			</h:panelGroup>
+		</h:form>
+
+
+
+
+
+
+	</ui:define>
+
+
+
+
+
+</ui:composition>
+
+
+</html>
